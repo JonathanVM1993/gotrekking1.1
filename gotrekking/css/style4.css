@@ -1,0 +1,468 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* ------- inicio (index)--------- */
+
+#contenedor{
+	height: 1000px;
+	width: auto;
+}
+
+#arriba{
+	height: 125px;
+	width: auto;
+	background-color: #000000;
+	border: 1px solid black;
+}
+
+
+
+#logoGoTrekking{
+	height: 100px;
+	width: 400px;
+	margin-left: 0px;
+	background-color: #FBF1F1;
+	background-image: url("../img/logo.png");
+	background-size: 100% 100%;
+	float: left;
+}
+
+#listarriba{
+	height: 50px;
+	width: 700px;
+	margin-top: 30px;
+	float: left;
+	margin-left: 20px;
+	border: 1px solid black;
+
+}
+
+.arribasesion1 li{
+	display: inline-block;
+}
+
+.arribasesion1 p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 80%;
+	color: #FFFFFF;
+	padding: 0;
+}
+
+.sinborde {
+	border: 0;
+	background-color: #F7EEEE;
+	outline: none;
+}
+
+.content-all{
+	height: 1000px;
+	width: auto;
+	background-image: url("../img/bienvenido.jpg");
+	background-size: 100% 100%;
+}
+
+#unete{
+	height: 700px;
+	width: 600px;
+	margin-top: 70px;
+	margin-left: 100px;
+	float: left;
+}
+
+.unete1 p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 150%;
+	color: #FFFFFF;
+}
+
+#inicio{
+	height: 50px;
+	width: 100px;
+	float: left;
+}
+
+#noticias{
+	height: 50px;
+	width: 100px;
+	float: left;
+
+}
+
+#verviajes{
+	height: 50px;
+	width: 110px;
+	float: left;
+}
+
+.navlistaarriba ul{
+	display: inline-block;
+	float: left;
+	list-style: none;
+}
+
+.navlistaarriba li{
+	float: left;
+	margin-left: 50px;
+
+}
+
+.sindecoracionLink a{
+	text-decoration: none;
+}
+
+.navlistaarriba ul a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navlistaarriba nav {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.navlistaarriba a:hover{
+	color: #0107FF;
+	font-size: 120%;
+	transition: color 2s;
+}
+
+
+
+/* ------------------- fin inicio index -------------------
+
+
+/* Sesion arriba izquierda*/
+
+.li_misesion{
+  height: 34px;
+  width: 230px;
+  border: 1px solid black;
+  margin-top: 25px;
+  margin-left: 60px;
+  float:left;
+}
+
+.foto_perfil{
+  height: 80px;
+  width: 100px;
+  border : 1px solid black;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#sesion{
+	width: 500px;
+	height: 100px;
+	border: 1px solid black;
+	float:  left;
+	margin-left: 100px;
+}
+
+/* ------------------- Registrarse ------------------------- */
+
+
+
+#formulario {
+	height: 700px;
+	width: 600px;
+	float: left;
+	margin-top: 70px;
+	margin-left: 100px;
+}
+
+.tablaregistrar p{
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+	outline: none;
+}
+
+.cargando {
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+	outline: none;
+}
+
+#cargando1{
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin-top: 300px;
+}
+
+/* estilo pagina admin */
+
+.admin_menu p,a,li{
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+}
+
+#admin_menu{
+	height: 500px;
+	width: 500px;
+	float:  left;
+	margin-top: 50px;
+	margin-left: 50px;
+	border: 1px solid black;
+
+}
+
+.table_guias p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 100%;
+	color: #FFFFFF;
+	padding: 0;
+}
+
+#tabla_mostrar_guias{
+	height:1000px;
+	width: 1600px;
+	float:  left;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+
+.table_guias table{
+	text-align: left;
+	width: 100%;
+	text-size-adjust: auto;
+	table-layout:  fixed;
+	font-size: 100%;
+}
+.table_guias th, td,tr,a{
+	font-family: 'Poppins', sans-serif;
+	font-size: 100%;
+	color: #FFFFFF;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+}
+
+/* Ver viajes desde usuario*/
+
+.viaje1 p{
+	font-family: 'Poppins', sans-serif;
+	font-size: 80%;
+	color: #FFFFFF;
+}
+
+.viaje1 {
+	height: 300px;
+	width: 1500px;
+	/* border: 1px solid black; */
+	margin-top: 10px;
+	margin-left: 100px;
+	float: left;
+}
+
+.viaje_descripcion {
+	height:290px;
+	width: 450px;
+	/* border: 1px solid black; */
+	margin-top: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+.imagen{
+	height: 180px;
+	width: 250px;
+	/*border: 1px solid black; */
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+/* admin_agregarnoticia */
+
+.admin_noticia{
+  width: 500px;
+  height: 500px;
+  float: left;
+  border: 1px solid black;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+/* noticias */
+
+.seccion_noticia h1{
+
+}
+
+.seccion_noticia p{
+
+}
+
+.seccion_noticia{
+	width: 1400px;
+	height: auto;
+	float:left;
+	border: 1px solid black;
+	margin-top: 30px;
+	margin-left: 200px;
+}
+
+.noticia{
+	width: 400px;
+	height: auto;
+	float:left;
+	border: 1px solid black;
+	margin-left: 30px;
+}
+
+/* usuario cuestionario */
+
+.cuestionario{
+	width: 800px;
+	height: 800px;
+	border: 1px solid black;
+	float:left;
+	margin-top: 30px;
+	margin-left: 400px;
+}
+
+.tabla_pagados table{
+	text-align: left;
+	width: 100%;
+	text-size-adjust: auto;
+	table-layout: fixed;
+	font-size: 100%;
+}
+
+/* usuario postulacion */
+
+.postulacion{
+	height: 500px;
+	width: 500px;
+	border: 1px solid black;
+	float: left;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+$fuschia: #ff0081;
+$button-bg: $fuschia;
+$button-text-color: #fff;
+$baby-blue: #f8faff;
+
+body{
+  font-size: 16px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  background-color: $baby-blue;
+}
+.bubbly-button{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $button-bg;
+  color: $button-text-color;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+
+  &:before{
+    display: none;
+    top: -75%;
+    background-image:
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle,  transparent 20%, $button-bg 20%, transparent 30%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle,  transparent 10%, $button-bg 15%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  //background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
+  }
+
+  &:after{
+    display: none;
+    bottom: -75%;
+    background-image:
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle,  transparent 10%, $button-bg 15%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  //background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+
+  &:active{
+    transform: scale(0.9);
+    background-color: darken($button-bg, 5%);
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+
+  &.animate{
+    &:before{
+      display: block;
+      animation: topBubbles ease-in-out 0.75s forwards;
+    }
+    &:after{
+      display: block;
+      animation: bottomBubbles ease-in-out 0.75s forwards;
+    }
+  }
+}
+
+
+@keyframes topBubbles {
+  0%{
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;}
+ 100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+  background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+  }
+}
+
+@keyframes bottomBubbles {
+  0%{
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
+ 100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+  background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+  }
+}
