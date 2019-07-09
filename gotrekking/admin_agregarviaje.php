@@ -26,11 +26,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/style5.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<script src="js/jqueryajax.js"></script>
-	<script src="js/funciones3.js"></script>
+	<script src="js/funciones6.js"></script>
 	<script>
 		$(document).ready(function() {
 			//boton registrar

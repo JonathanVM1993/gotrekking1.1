@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="css/style5.css">
+	<link rel="stylesheet" href="css/style7.css">
 	<link rel="stylesheet" href="css/boton.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -36,7 +36,7 @@
 				},
 				success: function(parametroRetorno){
 					// mostrar el resultado del archivo
-					$("#cargando1").html(parametroRetorno);
+					$("#cargando1").html(parametroRetorno);												
 				}
 				});
 			});
@@ -113,8 +113,8 @@
 			 		<div id="sesion" class="sindecoracionLink">
 			 		<form action="p_cerrarsesion.php">
 						<div class="li_misesion">
-								<li><p><a href="">Mis viajes</a></p></li>
-								<li><p><a href="">Mi perfil</a></p></li>
+								<li><p><a href="usuario_misviajes.php">Mis viajes</a></p></li>
+								<li><p><a href="usuario_perfil.php">Mi perfil</a></p></li>
 								<button type="submit" class ="btn - btn-warning">Cerrar sesion</button>
 						</div>
 						<div class="foto_perfil">
@@ -131,6 +131,9 @@
 				<li><p>Contraseña :</p><input class="sinborde" type="password" placeholder="Contraseña" id="txtContraseñaL" name="txtContraseñaL"></li>
 				<li><p><input type="button" class= "bubbly-button" value="Iniciar sesion" id="btnIniciar"></p></li>
 				<li><p><input type="button" class= "bubbly-button" value= "Registrarse" onclick="irRegistrar()"></p></li>
+				<button class= "bubbly-button" value= "Registrarse" onclick="irRegistrar()">
+					<span>Hola</span>
+				</button>
 			</form>
 			<?php
 			 	}?>

@@ -3,6 +3,10 @@ function irRegistrar(){
 			location.href = "registrarse.php";
 }
 
+function volverPerfil(){
+			location.href = "usuario_perfil.php";
+}
+
 function irInicio(){
 			location.href = "index.php";
 }
@@ -24,6 +28,10 @@ function irViajes(){
 
 function volver_viajes(){
   location.href = "admin_verviajes.php";
+}
+
+function miPerfil(){
+	location.href = "usuario_perfil.php";
 }
 
 function registrar_usuario(){

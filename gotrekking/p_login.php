@@ -1,7 +1,7 @@
 <script>
 	function exito(){
 		alert("Bienvenido Usuario");
-		window.location = "index.php";
+		window.location = "usuario_perfil.php";
 	}
 
 	function exitoAdmin(){
@@ -38,6 +38,11 @@
 
 				$_SESSION["foto"] = $row[8];
 				$_SESSION["id"] = $row[0];
+				$_SESSION["rut"] = $row[5];
+				$_SESSION["nombres"] = $row[2];
+	      $_SESSION["apellidos"] = $row[3];
+				$_SESSION["edad"] = $row[4];
+	      $_SESSION["enfermedad"] = $row[7];
 
 	    	echo "<script>exito()</script>";
 	    	//asignamos al usuario la variable session lo cual sería el correo

@@ -3,6 +3,10 @@ function irRegistrar(){
 			location.href = "registrarse.php";
 }
 
+function volverPerfil(){
+			location.href = "usuario_perfil.php";
+}
+
 function irInicio(){
 			location.href = "index.php";
 }
@@ -24,6 +28,10 @@ function irViajes(){
 
 function volver_viajes(){
   location.href = "admin_verviajes.php";
+}
+
+function miPerfil(){
+	location.href = "usuario_perfil.php";
 }
 
 function registrar_usuario(){
@@ -116,22 +124,4 @@ function agregar_noticia(){
 			$("#cargando1").html(parametroRetorno);
 		}
 	});
-}
-
-var animateButton = function(e) {
-
-  e.preventDefault;
-  //reset animation
-  e.target.classList.remove('animate');
-
-  e.target.classList.add('animate');
-  setTimeout(function(){
-    e.target.classList.remove('animate');
-  },700);
-};
-
-var bubblyButtons = document.getElementsByClassName("bubbly-button");
-
-for (var i = 0; i < bubblyButtons.length; i++) {
-  bubblyButtons[i].addEventListener('click', animateButton, false);
 }
