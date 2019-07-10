@@ -141,11 +141,11 @@
         	$mostrar = mysqli_query($conexion,$queryviajes);
             echo "<table class='tabla_pagados' border= '1px'>
           			<tr>
-          			<th><p> Nombre viaje</p></th>
-          			<th><p> Fecha viaje</p></th>
-          			<th><p> Ubicacion</p></th>
-          			<th><p> Precio viaje</p></th>
-                <th><p> Estado pago</p></th>
+          			<th><p>Nombre viaje</p></th>
+          			<th><p>Fecha viaje</p></th>
+          			<th><p>Ubicacion</p></th>
+          			<th><p>Precio viaje</p></th>
+                <th><p>Estado pago</p></th>
           			</tr>
           			";
           	while ($row1=mysqli_fetch_array($mostrar)) {

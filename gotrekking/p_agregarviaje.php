@@ -25,6 +25,7 @@
 	$ubicacion1= $_POST['txtUbicacion'];
 	$nivel1 = $_POST['id_nivel'];
 	$precio1= $_POST['txtPrecio'];
+	$horaviaje = $_POST['txtHora'];
 
 	$nombreArchivo1 = $_FILES['img1']['tmp_name'];
 	$nombreArchivo2 = $_FILES['img2']['tmp_name'];
@@ -47,7 +48,7 @@
 	move_uploaded_file($imagen3["tmp_name"], $ruta3);
 	move_uploaded_file($imagengoogle["tmp_name"], $ruta4);
 
-	$insertar = "INSERT INTO t_viaje(nombre_viaje,fecha_viaje,id_guia,imagen1,imagen2,imagen3,imagen4,descripcion_viaje,ubicacion,nivel,precio_viaje)VALUES('$nombreviaje','$fecha_viaje','$guia','$ruta1','$ruta2','$ruta3','$ruta4','$descripcion','$ubicacion1','$nivel1','$precio1')";
+	$insertar = "INSERT INTO t_viaje(nombre_viaje,fecha_viaje,id_guia,imagen1,imagen2,imagen3,imagen4,descripcion_viaje,ubicacion,nivel,precio_viaje,hora_reunion)VALUES('$nombreviaje','$fecha_viaje','$guia','$ruta1','$ruta2','$ruta3','$ruta4','$descripcion','$ubicacion1','$nivel1','$precio1','$horaviaje')";
 
 	$resultado = mysqli_query($conexion,$insertar);
 

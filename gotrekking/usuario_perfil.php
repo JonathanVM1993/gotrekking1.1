@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<script src="js/jqueryajax.js"></script>
-	<script src="js/funciones2.js"></script>
+	<script src="js/funciones8.js"></script>
 	<script>
 		$(document).ready(function() {
 			//boton registrar
@@ -84,7 +82,7 @@
 			<ul>
 				<li><a href="index.php">Inicio</a></li>
 				<li><a href="noticias.php">Noticias</a></li>
-				<li><a href="">Ver viajes</a></li>
+				<li><a href="usuario_viajes.php">Ver viajes</a></li>
 
 			</ul>
 			</nav>

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
 	<script src="js/jqueryajax.js"></script>
-	<script src="js/funciones6.js"></script>
+	<script src="js/funciones8.js"></script>
 	<script src="js/jsboton.js"></script>
 	<script>
 		$(document).ready(function() {
@@ -36,7 +36,7 @@
 				},
 				success: function(parametroRetorno){
 					// mostrar el resultado del archivo
-					$("#cargando1").html(parametroRetorno);												
+					$("#cargando1").html(parametroRetorno);
 				}
 				});
 			});

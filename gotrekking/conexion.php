@@ -1,3 +1,3 @@
 <?php
-	$conexion = mysqli_connect("localhost","root","","paginatrekking16");
+	$conexion = mysqli_connect("localhost","root","","paginatrekking17");
 ?>

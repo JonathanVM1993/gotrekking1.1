@@ -2,6 +2,10 @@
 	function errorSession(){
 		alert("Usted no tiene permiso");
 		window.location = "index.php";
+
+		function errorEliminar(){
+			alert("No puede eliminar al guía ya que se encuentra en un viaje");
+		}
 	}
 </script>
 
@@ -11,8 +15,8 @@
 
     session_start();
 
-    if (isset($_SESSION["administrador"])) {
-    	echo "Se encuentra actualmente en el panel de control de : ".$_SESSION["administrador"];
+    if (isset($_SESSION["usuarioguia"])) {
+
     }
     else{
     	echo "<script>errorSession()</script>";
@@ -30,11 +34,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="css/style9.css">
-	<link rel="stylesheet" href="css/boton.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<script src="js/jqueryajax.js"></script>
-	<script src="js/funciones8.js"></script>
+	<script src="js/funciones9.js"></script>
 	<script>
 		$(document).ready(function() {
 			//boton registrar
@@ -111,58 +114,46 @@
 			</nav>
 		</div>
 		<div class="arribaSesion" id="arribaSesion">
-					<form action="p_cerrarsesionadmin.php">
+					<form action="p_cerrarsesionguia.php">
 			 			<p>Modo administrador</p>
-			 			<button type="submit" class= "bubbly-button">Cerrar sesion</button>
+			 			<button type="submit" class ="btn - btn-warning">Cerrar sesion</button>
 			 		</form>
 		</div>
 
 
 		</div>
 		<div class="content-all">
-					<div id="admin_menu" class="admin_menu">
-						<h1>Registrar guía</h1>
-						<form name="formularioguia" id="formularioguia" enctype="multipart/form-data" method="post">
-							<table class="tablaregistrar">
-								<tr>
-									<td><p>Nombre guía:</p></td>
-									<td><input class="sinborde"	id="txtNombre" name="txtNombre" type="text"></td>
-								</tr>
-								<tr>
-									<td><p>Apellido parterno guía:</p></td>
-									<td><input class="sinborde"	id="txtApellidoP" name="txtApellidoP" type="text"></td>
-								</tr>
-								<tr>
-									<td><p>Apellido materno guía:</p></td>
-									<td><input class="sinborde"	id="txtApellidoM" name="txtApellidoM" type="text"></td>
-								</tr>
-								<tr>
-									<td><p>Rut:</p></td>
-									<td><input class="sinborde"	id="txtRut" name="txtRut" type="text"></td>
-								</tr>
-								<tr>
-									<td><p>Teléfono:</p></td>
-									<td><input class="sinborde"	id="txtTelefono" name="txtTelefono" type="text"></td>
-								</tr>
-								<tr>
-									<td><p>Correo:</p></td>
-									<td><input class="sinborde"	id="txtCorreo" name="txtCorreo" type="text"></td>
-								</tr>
-								<tr>
-									<td><p>Password:</p></td>
-									<td><input class="sinborde"	id="txtPassword" name="txtPassword" type="text"></td>
-								</tr>
-								<tr>
-							<td><input type="button" class= "bubbly-button" value="Registrar" name ="btnR"id="btnR" onclick="registrar_guia()"></td>
-								</tr>
-								<td><input type="button" class= "bubbly-button" value="Volver" name ="btnR"id="btnR" onclick="volver_panel()" ></td>
-							</table>
-						</form>
 
-					</div>
+		<div id="tabla_mostrar_guias" class="tabla_pagados">
+      <h1>Lista de inscritos</h1>
+      <?php
+      include "conexion.php";
+      $id_viaje = $_POST['viaje_id'];
+      $query = "SELECT * FROM usuarios_viaje WHERE n_viaje = '$id_viaje'";
+      $ejecutar = mysqli_query($conexion, $query);
+
+      while ($row = mysqli_fetch_row($ejecutar)) {
+        $queryuser = "SELECT * FROM t_usuario WHERE id_usuario='$row[1]'";
+        $queryejecutar = mysqli_query($conexion, $queryuser);
+        $row1 = mysqli_fetch_row($queryejecutar);
+        $nombreuser = $row1[2];
+        $apellidouser = $row1[3];
+        $estadopago = $row[3];
+        $viaje = $row[3];
+      echo "<table class='tabla_pagados'>
+      <tr>
+        <td>Nombre:$nombreuser $apellidouser</td>
+        <td>Estado pago: $estadopago</td>
+        <td><input type='button' value='Ver cuestionario' name ='btnR'id='btnR' onclick='volverGuiaViajes()'></td>
+      </tr>
+      </table>";
+      }
+       ?>
+      <input type='button' value='Volver' name ='btnR'id='btnR' onclick='volverGuiaViajes()'>
 		</div>
-				<div class="cargando1" id="cargando1" style='display: none'>
-				</div>
+		</div>
+					<div class="cargando1" id="cargando1" style='display: none'>
+					</div>
 		</div>
 	</div>
 </body>

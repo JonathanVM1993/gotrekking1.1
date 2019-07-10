@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<script src="js/jqueryajax.js"></script>
-	<script src="js/funciones5.js"></script>
+	<script src="js/funciones8.js"></script>
 	<script>
 		$(document).ready(function() {
 			//boton registrar

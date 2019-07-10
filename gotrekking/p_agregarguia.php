@@ -27,11 +27,12 @@
 		$rut = $_POST['txtRut'];
 		$telefono = $_POST['txtTelefono'];
 		$correo = $_POST['txtCorreo'];
+		$password = $_POST['txtPassword'];
 
-		$insertar = "INSERT INTO t_guia_trekking(nom_guia,ap_p_guia,ap_m_guia,rut,telefono,correo) VALUES ('$nombre','$apellidopaterno','$apellidomaterno','$rut','$telefono','$correo')";
+		$insertar = "INSERT INTO t_guia_trekking(nom_guia,ap_p_guia,ap_m_guia,rut,telefono,correo,password) VALUES ('$nombre','$apellidopaterno','$apellidomaterno','$rut','$telefono','$correo','$password')";
 
 		$verificar_guia = mysqli_query($conexion,"SELECT * FROM t_guia_trekking WHERE correo = '$correo'");
-		
+
 			if (mysqli_num_rows($verificar_guia) > 0) {
 				echo "El usuario ya se encuentra registrado con este correo";
 				echo "<script>yaRegistrado()</script>";

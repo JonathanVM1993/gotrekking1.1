@@ -30,7 +30,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<script src="js/jqueryajax.js"></script>
-	<script src="js/funciones6.js"></script>
+	<script src="js/funciones10.js"></script>
 	<script>
 		$(document).ready(function() {
 			//boton registrar
@@ -186,6 +186,10 @@
 						<tr>
 	    				<td><p>Precio viaje:</p></td>
 	    				<td><input class="sinborde" type="text" name="txtPrecio"  id="txtPrecio"></td>
+	    			</tr>
+						<tr>
+	    				<td><p>Ingrese hora reunion:</p></td>
+	    				<td><input class="sinborde" type="text" name="txtHora"  id="txtHora"></td>
 	    			</tr>
 	    			<tr>
 							<td><input type="submit" value="Registrar" name ="btnR"id="btnR"></td>
