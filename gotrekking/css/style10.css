@@ -32,11 +32,10 @@ body{
 
 #listarriba{
 	height: 50px;
-	width: 900px;
+	width: 850px;
 	margin-top: 30px;
 	float: left;
 	margin-left: 20px;
-	border: 1px solid black;
 }
 
 .arribasesion1 li{
@@ -148,7 +147,6 @@ body{
 .foto_perfil{
   height: 80px;
   width: 100px;
-  border : 1px solid black;
   float: left;
   margin-left: 10px;
   margin-top: 10px;
@@ -157,7 +155,6 @@ body{
 #sesion{
 	width: 500px;
 	height: 100px;
-	border: 1px solid black;
 	float:  left;
 	margin-left: 100px;
 }
@@ -203,11 +200,9 @@ body{
 #admin_menu{
 	height: 500px;
 	width: 500px;
-	float:  left;
+	float: left;
 	margin-top: 50px;
 	margin-left: 50px;
-	border: 1px solid black;
-
 }
 
 .table_guias p{
@@ -370,7 +365,6 @@ body{
 	float: left;
 	margin-left: 100px;
 	margin-top: 150px;
-	border: 1px solid black;
 }
 
 /* Panel guia */
@@ -378,7 +372,6 @@ body{
 #arribaSesionGuia{
 	width: 300px;
 	height: 70px;
-	border: 1px solid black;
 	float:  left;
 	margin-left: 50px;
   margin-top: 50px;
@@ -390,7 +383,6 @@ body{
 	margin-top: 30px;
 	float: left;
 	margin-left: 20px;
-	border: 1px solid black;
 }
 
 .guia_misviajes{
@@ -413,6 +405,5 @@ body{
   width: 500px;
   float:left;
   margin-top: 100px;
-  margin-left: 100px;
-  border: 1px solid black;
+  margin-left: 100px;  
 }

@@ -26,7 +26,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<script src="js/jqueryajax.js"></script>
-	<script src="js/funciones8.js"></script>
+	<script src="js/funciones10.js"></script>
 	<script>
 		$(document).ready(function() {
 			//boton registrar
@@ -60,7 +60,7 @@
 	<style>
 		h1{
 			font-family: 'Open+Sans', sans-serif;
-			font-size: 400%;
+			font-size: 200%;
 			color: #FFFFFF;
 		}
 		a{
@@ -72,6 +72,12 @@
 			color: #FFFFFF;
 			list-style: none;
 		}
+    p{
+      font-family: 'Open+Sans', sans-serif;
+			font-size: 100%;
+			color: #FFFFFF;
+			list-style: none;
+    }
 	</style>
 </head>
 <body>
@@ -103,7 +109,30 @@
 		</div>
 		<div class="content-all">
 					<div id="guia_bitacoraE" class="guia_bitacoraE">
-
+            <h1>Bitácora del viajero</h1>
+            <form action="p_agregarb.php"name="form-b" id="form-b" enctype="multipart/form-data" method="post">
+            <?php
+              require('isLoginGuia.php');
+              include ("conexion.php");
+             ?>
+             <td>
+               <select name="id_viaje" id="id_viaje">
+               <option value="$row1[0]" selected>Seleccione viaje</option>
+               <?php
+               include "conexion.php";
+             $query1 = "SELECT nombre_viaje,id_viaje,id_guia from t_viaje WHERE id_guia ='$getIdGuia'";
+             $mostrar1 = mysqli_query($conexion,$query1);
+               while ($row1=mysqli_fetch_array($mostrar1))
+                 {?>
+                 <option value="<?php echo "$row1[1]";?>"><?php echo "$row1[0]"?></option>
+                 <?php } ?>
+             </select>
+             </td>
+             <p>Agrega historia a tu bitacora</p>
+             <textarea name="d_bit" id="d_bit" rows="8" cols="50"></textarea>
+             <br>
+             <button name ="btnR"id="btnR" onclick="agregar_bitacora()">Agregar</button>
+             </form>
 					</div>
 		</div>
 	</div>
