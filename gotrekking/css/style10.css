@@ -32,12 +32,11 @@ body{
 
 #listarriba{
 	height: 50px;
-	width: 700px;
+	width: 900px;
 	margin-top: 30px;
 	float: left;
 	margin-left: 20px;
 	border: 1px solid black;
-
 }
 
 .arribasesion1 li{
@@ -304,7 +303,6 @@ body{
 	width: 1400px;
 	height: auto;
 	float:left;
-	border: 1px solid black;
 	margin-top: 30px;
 	margin-left: 200px;
 }
@@ -336,6 +334,7 @@ body{
 	font-size: 100%;
 }
 
+
 /* usuario postulacion */
 
 .postulacion{
@@ -345,4 +344,75 @@ body{
 	float: left;
   margin-top: 100px;
   margin-left: 100px;
+}
+
+/* perfil usuario */
+
+.perfil_user{
+	height: 600px;
+	width: 600px;
+  margin-top: 100px;
+  margin-left: 100px;
+  float:left;
+}
+
+.foto_p{
+  height: 300px;
+  width: 300px;
+  float: left;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+.proximos_viajes{
+	height: auto;
+	width: 1000px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 150px;
+	border: 1px solid black;
+}
+
+/* Panel guia */
+
+#arribaSesionGuia{
+	width: 300px;
+	height: 70px;
+	border: 1px solid black;
+	float:  left;
+	margin-left: 50px;
+  margin-top: 50px;
+}
+
+#listarribaGuia{
+	height: 50px;
+	width: 1000px;
+	margin-top: 30px;
+	float: left;
+	margin-left: 20px;
+	border: 1px solid black;
+}
+
+.guia_misviajes{
+  float:left;
+  height: auto;
+  width: 1300px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.guia_misviajes table{
+  text-align: left;
+	width: 100%;
+	text-size-adjust: auto;
+	table-layout: fixed;
+	font-size: 100%;
+}
+
+.guia_bitacoraE{
+  height: 500px;
+  width: 500px;
+  float:left;
+  margin-top: 100px;
+  margin-left: 100px;
+  border: 1px solid black;
 }

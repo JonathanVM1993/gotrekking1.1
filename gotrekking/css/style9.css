@@ -405,5 +405,14 @@ body{
 	width: 100%;
 	text-size-adjust: auto;
 	table-layout: fixed;
-	font-size: 100%;  
+	font-size: 100%;
+}
+
+.guia_bitacoraE{
+  height: 300px;
+  width: 300px;
+  float:left;
+  margin-top: 50px;
+  margin-left: 50px;
+
 }

@@ -16,11 +16,8 @@
     }
     else{
     	echo "<script>errorSession()</script>";
-
-
     }
     mysqli_close($conexion);
-
  ?>
 
 <!DOCTYPE html>

@@ -69,10 +69,6 @@
 			// boton registrar
 			});
 	</script>
-
-
-
-
 	<style>
 		h1{
 			font-family: 'Poppins', sans-serif;

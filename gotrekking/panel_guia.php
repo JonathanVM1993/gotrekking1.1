@@ -21,7 +21,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
-	<link rel="stylesheet" href="css/style9.css">
+	<link rel="stylesheet" href="css/style10.css">
 	<link rel="stylesheet" href="css/boton.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -103,9 +103,7 @@
 		</div>
 		<div class="content-all">
 					<div id="guia_menu" class="guia_menu">
-
 					</div>
-
 		</div>
 	</div>
 </body>
